@@ -71,9 +71,9 @@ endif()
 ##################################### Set Application options #####################################
 
 ######## Set URLs ########
-set(Launcher_NEWS_RSS_URL "https://polymc.org/feed/feed.xml" CACHE STRING "URL to fetch PolyMC's news RSS feed from.")
-set(Launcher_NEWS_OPEN_URL "https://polymc.org/news" CACHE STRING "URL that gets opened when the user clicks 'More News'")
-set(Launcher_HELP_URL "https://polymc.org/wiki/help-pages/%1" CACHE STRING "URL (with arg %1 to be substituted with page-id) that gets opened when the user requests help")
+set(Launcher_NEWS_RSS_URL "" CACHE STRING "URL to fetch PolyMC's news RSS feed from.")
+set(Launcher_NEWS_OPEN_URL "" CACHE STRING "URL that gets opened when the user clicks 'More News'")
+set(Launcher_HELP_URL "" CACHE STRING "URL (with arg %1 to be substituted with page-id) that gets opened when the user requests help")
 
 ######## Set version numbers ########
 set(Launcher_VERSION_MAJOR 5)
@@ -90,25 +90,25 @@ set(Launcher_BUILD_PLATFORM "" CACHE STRING "A short string identifying the plat
 set(Launcher_UPDATER_BASE "" CACHE STRING "Base URL for the updater.")
 
 # The metadata server
-set(Launcher_META_URL "https://meta.polymc.org/v1/" CACHE STRING "URL to fetch Launcher's meta files from.")
+set(Launcher_META_URL "" CACHE STRING "URL to fetch Launcher's meta files from.")
 
 # Imgur API Client ID
 set(Launcher_IMGUR_CLIENT_ID "5b97b0713fba4a3" CACHE STRING "Client ID you can get from Imgur when you register an application")
 
 # Bug tracker URL
-set(Launcher_BUG_TRACKER_URL "https://github.com/PolyMC/PolyMC/issues" CACHE STRING "URL for the bug tracker.")
+set(Launcher_BUG_TRACKER_URL "" CACHE STRING "URL for the bug tracker.")
 
 # Translations Platform URL
-set(Launcher_TRANSLATIONS_URL "https://hosted.weblate.org/projects/polymc/polymc/" CACHE STRING "URL for the translations platform.")
+set(Launcher_TRANSLATIONS_URL "" CACHE STRING "URL for the translations platform.")
 
 # Matrix Space
-set(Launcher_MATRIX_URL "https://matrix.to/#/#polymc:matrix.org" CACHE STRING "URL to the Matrix Space")
+set(Launcher_MATRIX_URL "" CACHE STRING "URL to the Matrix Space")
 
 # Discord URL
-set(Launcher_DISCORD_URL "https://discord.gg/Z52pwxWCHP" CACHE STRING "URL for the Discord guild.")
+set(Launcher_DISCORD_URL "" CACHE STRING "URL for the Discord guild.")
 
 # Subreddit URL
-set(Launcher_SUBREDDIT_URL "https://www.reddit.com/r/PolyMCLauncher/" CACHE STRING "URL for the subreddit.")
+set(Launcher_SUBREDDIT_URL "" CACHE STRING "URL for the subreddit.")
 
 # Builds
 set(Launcher_FORCE_BUNDLED_LIBS OFF CACHE BOOL "Prevent using system libraries, if they are available as submodules")
@@ -230,7 +230,7 @@ if(UNIX AND APPLE)
     set(MACOSX_BUNDLE_ICON_FILE ${Launcher_Name}.icns)
     set(MACOSX_BUNDLE_COPYRIGHT "Copyright 2021-2022 ${Launcher_Copyright}")
     set(MACOSX_SPARKLE_UPDATE_PUBLIC_KEY "idALcUIazingvKSSsEa9U7coDVxZVx/ORpOEE/QtJfg=")
-    set(MACOSX_SPARKLE_UPDATE_FEED_URL "https://polymc.org/feed/appcast.xml")
+    set(MACOSX_SPARKLE_UPDATE_FEED_URL "")
 
     set(MACOSX_SPARKLE_DOWNLOAD_URL "https://github.com/sparkle-project/Sparkle/releases/download/2.1.0/Sparkle-2.1.0.tar.xz" CACHE STRING "URL to Sparkle release archive")
     set(MACOSX_SPARKLE_SHA256 "bf6ac1caa9f8d321d5784859c88da874f28412f37fb327bc21b7b14c5d61ef94" CACHE STRING "SHA256 checksum for Sparkle release archive")

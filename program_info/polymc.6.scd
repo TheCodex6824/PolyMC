@@ -46,16 +46,6 @@ Here are the current features of PolyMC.
 *1*
 	Failure (syntax or usage error; configuration error; unexpected error).
 
-# BUGS
-
-https://github.com/PolyMC/PolyMC/issues
-
-# RESOURCES
-
-GitHub: https://github.com/PolyMC/PolyMC
-
-Main website: https://polymc.org
-
 # AUTHORS
 
 PolyMC Contributors
